@@ -24,7 +24,7 @@ When we started the project, the client just asked for a basic CLI (command line
 
 As the project progressed, more features were added incrementally in "Sprints". Each of these sprints had new "deliverables" or features that could then be shown off to the client. This approach breaks large projects down into manageble chunks and allows the client to change their wishes over time.
 
-Later on, the client wanted the CLI to output to a file. This was achieved in another sprint. 
+Later on, the client wanted the CLI to output to a file. This was achieved in another sprint. www
 
 After that, database support was added to the application using a local SQLite database.
 
@@ -49,10 +49,11 @@ I also learned about one of the most popular design patterns for organizing comp
 For this project we had the option to implement a database as part of the final sprint. I chose to use a local SQLite relational database to hold all of the event and customer information. I learned how to create primary keys, autoincrementing keys, and other core database design components. The database structure had three tables that were linked together using these components. I also had to learn a new java library call JDBC. This library aids in connecting to a database and sending queries. Overall, I am thankful that I put in the extra effort to learn this essential part of modern software development.
 
 # Program Screenshots
-![Home Screen]()
-![Customer Info]()
-![Event Info]()
-![Location Info]()
-![Menu Info]()
-![Events Calendar]()
-![Owner Info]()
+![Home Screen](./img/home.png)
+![Customer Info](./img/customer_info.gif)
+![Event Info](./img/event.png)
+![Location Selection](./img/location_info.gif)
+![Menu Selection](./img/menu.gif)
+![User Events](./img/user_events.png)
+![Events Calendar](./img/calendar.gif)
+![Owner Info](./img/owner.png)
