@@ -49,11 +49,32 @@ I also learned about one of the most popular design patterns for organizing comp
 For this project we had the option to implement a database as part of the final sprint. I chose to use a local SQLite relational database to hold all of the event and customer information. I learned how to create primary keys, autoincrementing keys, and other core database design components. The database structure had three tables that were linked together using these components. I also had to learn a new java library call JDBC. This library aids in connecting to a database and sending queries. Overall, I am thankful that I put in the extra effort to learn this essential part of modern software development.
 
 # Program Screenshots
-![Home Screen](./img/home.png)
-![Customer Info](./img/customer_info.gif)
-![Event Info](./img/event.png)
-![Location Selection](./img/location_info.gif)
-![Menu Selection](./img/menu.gif)
-![User Events](./img/user_events.png)
-![Events Calendar](./img/calendar.gif)
+![Home Screen](./img/home.png "Home Screen")
+
+Customer information is checked in real-time using regular expressions.
+
+![Customer Info](./img/customer_info.gif "Customer Info")
+
+Using a calender selection box, the program ensures that the date is valid.
+
+![Event Info](./img/event.png "Event Info")
+
+Location options change depending on how many guests you have.
+
+![Location Selection](./img/location_info.gif "Location Info")
+
+Menu checkboxes are disabled when you get past your maximum number of choices.
+
+![Menu Selection](./img/menu.gif "Menu Selection")
+
+This screen displays all of the users events they have created; up to 5.
+
+![User Events](./img/user_events.png "User Events")
+
+All of the events are queried from the database file and displayed in seperate tabs for each customer.
+
+![Events Calendar](./img/calendar.gif "Events Calendar")
+
+Super serious info.
+
 ![Owner Info](./img/owner.png)
