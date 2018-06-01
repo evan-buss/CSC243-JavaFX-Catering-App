@@ -1,0 +1,13 @@
+.root {
+    -fx-background-color: #E1E2E1;
+}
+
+#gridPane {
+    -fx-background-color: #E1E2E1;
+}
+
+.button {
+    -fx-background-color: #00bcd4;
+    -fx-text-alignment: center;
+    -fx-border-color: black;
+}

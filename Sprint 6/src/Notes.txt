@@ -1,0 +1,52 @@
+-Make a screen for the owner to modify the different values
+    -Popup screen with password to get to modification scene
+
+-Upload to github
+
+-Add a nice looking logo image for the title screen
+
+-Figure out the font situation, they aren't loading on
+    other systems
+
+TODO:
+    Figure out custom css
+    write all events to file
+        display in calendar view
+    organize model classes
+    Start documenting
+Focus on tomorrow:
+    implement regex to test certain textfields
+    figure out a fancy way to display event details
+
+Things to focus on in order:
+    -Implement regex validation
+        Phone number
+        name
+        email address
+        number of guests
+        (make the textfields outline in red if the input is invalid)
+    -create javadocs
+    -Implement database access or file reading
+    -think of clever ways to display the customer and event information
+        might use a dropdown menu type view
+            > * Customer Name * - *Date*
+              ---------------------------
+               Labels or other javafx ui to show the individual details when the
+                header is clicked
+    -Add custom css
+    -Fix certain scenes that don't expand fully when maximized
+        -probably just need to set the GridPane to use calculated width instead of fixed
+
+
+
+nameTF.textProperty().addListener((observable, oldValue, newValue) -> {
+String regex = "[A-Za-z ]*";
+boolean passed = nameTF.getText().matches(regex);
+if (passed) {
+nameTF.setStyle("-fx-border-color: green");
+} else {
+nameTF.setStyle("-fx-border-color: red");
+}
+});
+
+String pattern = "\\d{10}|(?:\\d{3}-){2}\\d{4}|\\(\\d{3}\\)\\d{3}-?\\d{4}";

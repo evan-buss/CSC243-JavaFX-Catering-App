@@ -1,0 +1,22 @@
+SQL table creation
+
+TABLES:
+    Customers
+        CustomerID      PrimaryKey
+        Name            Text   
+        PhoneNumber     Text
+        Email           Text
+
+    Events
+        CustomerID      ForeignKey
+        EventID         PrimaryKey
+        Date            DateTime
+        Type            String
+        GuestCount      NUM
+        Location        Text
+        MenuType        NUM
+
+    MenuItems
+        EventID             - matches the eventID in events
+        ItemCategory        
+        Item

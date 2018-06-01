@@ -1,0 +1,19 @@
+.root {
+    -fx-background-color: #E1E2E1;
+}
+
+#gridPane {
+    -fx-background-color: #E1E2E1;
+}
+
+#noFocus {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+/*TODO: Figure out a good style for buttons and other elements*/
+/*.button {*/
+    /*-fx-background-color: #00bcd4;*/
+    /*-fx-text-alignment: center;*/
+    /*-fx-border-color: black;*/
+/*}*/

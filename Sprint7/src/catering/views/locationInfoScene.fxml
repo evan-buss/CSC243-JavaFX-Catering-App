@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane id="test" prefHeight="400.0" prefWidth="600.0" stylesheets="/catering/views/style.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="catering.controllers.LocationInfoController">
+    <GridPane id="gridPane" prefHeight="600.0" prefWidth="582.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="50.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <Label id="pageLabel" alignment="CENTER" text="Location Selection" textAlignment="CENTER" underline="true" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <font>
+                <Font size="30.0" />
+            </font>
+            <GridPane.margin>
+                <Insets />
+            </GridPane.margin>
+        </Label>
+        <JFXRadioButton fx:id="javaRB" mnemonicParsing="false" text="Juliana's Java Joint" userData="1" GridPane.halignment="LEFT" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets left="80.0" />
+            </GridPane.margin>
+            <font>
+                <Font size="14.0" />
+            </font>
+        </JFXRadioButton>
+        <JFXRadioButton fx:id="shortyRB" mnemonicParsing="false" text="Shorty's" userData="2" GridPane.halignment="LEFT" GridPane.rowIndex="3">
+            <GridPane.margin>
+                <Insets left="80.0" />
+            </GridPane.margin>
+            <font>
+                <Font size="14.0" />
+            </font>
+        </JFXRadioButton>
+        <JFXRadioButton fx:id="stokesayRB" mnemonicParsing="false" text="Stokesay Castle" userData="3" GridPane.halignment="LEFT" GridPane.rowIndex="4">
+            <GridPane.margin>
+                <Insets left="80.0" />
+            </GridPane.margin>
+            <font>
+                <Font size="14.0" />
+            </font>
+        </JFXRadioButton>
+        <ImageView fx:id="javaIMG" fitHeight="130.0" fitWidth="270.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+            <Image url="@../images/java-joint-cropped.jpg" />
+            <GridPane.margin>
+                <Insets bottom="10.0" top="10.0" />
+            </GridPane.margin>
+        </ImageView>
+        <ImageView fx:id="shortyIMG" fitHeight="130.0" fitWidth="270.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+            <Image url="@../images/kutztown-tavern-cropped.jpg" />
+            <GridPane.margin>
+                <Insets bottom="10.0" top="10.0" />
+            </GridPane.margin>
+        </ImageView>
+        <ImageView fx:id="stokesayIMG" fitHeight="130.0" fitWidth="270.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+            <Image url="@../images/stokesay-castle-cropped.jpg" />
+            <GridPane.margin>
+                <Insets bottom="10.0" top="10.0" />
+            </GridPane.margin>
+        </ImageView>
+        <Label text="Number of Guests: " GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <GridPane.margin>
+                <Insets left="110.0" />
+            </GridPane.margin>
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="numTF" focusColor="#006db3" maxWidth="50.0" promptText="#" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <GridPane.margin>
+                <Insets left="20.0" />
+            </GridPane.margin>
+        </JFXTextField>
+
+
+        <!--Button Bar-->
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+            <JFXButton alignment="CENTER" buttonType="RAISED" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="40.0" prefWidth="120.0" ripplerFill="#63ccff" text="Back" textAlignment="CENTER">
+                <font>
+                    <Font size="14.0" />
+                </font>
+                <HBox.margin>
+                    <Insets left="30.0" right="30.0" />
+                </HBox.margin>
+            </JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" defaultButton="true" mnemonicParsing="false" onAction="#handleNextButton" prefHeight="40.0" prefWidth="120.0" ripplerFill="#63ccff" text="Next" textAlignment="CENTER">
+                <font>
+                    <Font size="14.0" />
+                </font>
+                <HBox.margin>
+                    <Insets left="30.0" right="30.0" />
+                </HBox.margin>
+            </JFXButton>
+        </HBox>
+    </GridPane>
+</ScrollPane>

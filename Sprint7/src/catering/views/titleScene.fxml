@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+          minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
+          stylesheets="/catering/views/style.css"
+          xmlns="http://javafx.com/javafx/8.0.141"
+          xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="catering.controllers.TitleController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="390.0" minWidth="10.0"
+                           prefWidth="300.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="307.0" minWidth="10.0"
+                           prefWidth="300.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="268.0" minHeight="10.0" prefHeight="268.0"
+                        vgrow="SOMETIMES"/>
+        <RowConstraints maxHeight="194.0" minHeight="10.0" prefHeight="132.0"
+                        vgrow="SOMETIMES"/>
+    </rowConstraints>
+
+    <HBox alignment="CENTER" prefHeight="191.0" prefWidth="600.0"
+          GridPane.columnSpan="2" GridPane.halignment="CENTER"
+          GridPane.rowIndex="1" GridPane.valignment="CENTER">
+        <JFXButton fx:id="customerButton" alignment="CENTER" buttonType="RAISED"
+                   defaultButton="true" mnemonicParsing="false"
+                   onAction="#handleCustButton" prefHeight="40.0"
+                   prefWidth="140.0" ripplerFill="#63ccff" text="New Customer"
+                   textAlignment="CENTER">
+            <HBox.margin>
+                <Insets bottom="20.0" left="20.0" right="20.0"/>
+            </HBox.margin>
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </JFXButton>
+        <JFXButton fx:id="calendarButton" alignment="CENTER" buttonType="RAISED"
+                   mnemonicParsing="false" onAction="#handleCalendarButton"
+                   prefHeight="40.0" prefWidth="140.0" ripplerFill="#63ccff"
+                   text="View All Events" textAlignment="CENTER">
+            <font>
+                <Font size="14.0"/>
+            </font>
+            <HBox.margin>
+                <Insets bottom="20.0" left="20.0" right="20.0"/>
+            </HBox.margin>
+        </JFXButton>
+        <JFXButton fx:id="infoButton" alignment="CENTER" buttonType="RAISED"
+                   mnemonicParsing="false" onAction="#handleInfoButton"
+                   prefHeight="40.0" prefWidth="140.0" ripplerFill="#63ccff"
+                   text="Information" textAlignment="CENTER">
+            <HBox.margin>
+                <Insets bottom="20.0" left="20.0" right="20.0"/>
+            </HBox.margin>
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </JFXButton>
+
+    </HBox>
+    <ImageView fitHeight="300.0" fitWidth="400.0" pickOnBounds="true"
+               preserveRatio="true" GridPane.columnSpan="2"
+               GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+        <image>
+            <Image url="@../images/logo.png"/>
+        </image>
+    </ImageView>
+</GridPane>

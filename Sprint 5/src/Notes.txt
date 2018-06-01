@@ -1,0 +1,19 @@
+-Make sure to package font with program so users have a consistent feel
+-Make a screen for the owner to modify the different values
+    -Popup screen with password to get to modification scene
+-Disable certain locations depending on the value they enter for guest number
+-Upload to github
+-Start working on implementing the models
+-Add a nice looking logo image for the title screen
+-Limit number of checkboxes to a maximum selection limit.
+-Figure out how to compile from command line for when I submit
+-maybe create an alert when the user forgets to do something
+
+-Scenes needed:
+    - View all events
+        -Might just use a textbox
+        -Could use a gridpane with details in a column
+    - view owner information
+        -simple details about the owner.
+-Figure out the font situation, they aren't loading on
+other systems

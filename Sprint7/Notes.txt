@@ -1,0 +1,24 @@
+-Upload to github
+
+TODO:
+    organize model classes
+    Javadocs for all java files
+
+Final:
+    Test running the program from acad on a Windows machine.
+
+Things to focus on in order:
+    -create javadocs
+
+Known Bugs:
+    need to delete customer database entry if the user goes back right after creating
+    radio buttons font changing on hover
+    change location scene to have more space between rb fonts and images
+    button font changes on hover
+        only the new customer button
+
+could make the resultset create a new event object, then use the events functions
+
+
+
+database file locked when creating new customer
